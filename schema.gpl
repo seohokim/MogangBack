@@ -1,0 +1,141 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Lecture {
+  id: Float!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  provider: String!
+  title: String!
+  author: String!
+  skills: [String!]!
+  category: [String!]!
+  lectureUpdatedAt: String!
+  level: String!
+  originPrice: Float!
+  currentPrice: Float!
+  duration: String!
+  score: Float!
+  views: Float!
+  description: String!
+  thumbnailUrl: String!
+  url: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type User {
+  id: Float!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  email: String!
+}
+
+type CreateUserOutputDto {
+  ok: Boolean!
+  message: [String]
+  user: User
+}
+
+type GetLikedLectureOutputDto {
+  ok: Boolean!
+  message: [String]
+  likedLectures: [Lecture!]
+}
+
+type LoginOutputDto {
+  ok: Boolean!
+  message: [String]
+  accessToken: String
+}
+
+type CreateLectureOutputDto {
+  ok: Boolean!
+  message: [String]
+  lecture: Lecture
+}
+
+type GetLectureOutputDto {
+  ok: Boolean!
+  message: [String]
+  lecture: Lecture
+}
+
+type GetLectureListOutputDto {
+  ok: Boolean!
+  message: [String]
+  lectures: [Lecture!]
+  totalPage: Int
+  currentPage: Int
+}
+
+type CreateLikeLectureOutputDto {
+  ok: Boolean!
+  message: [String]
+  likeStatus: String
+}
+
+type Query {
+  getUserInfo: String!
+  getLikedLecture: GetLikedLectureOutputDto!
+  getLecture(getLectureInput: GetLectureInputDto!): GetLectureOutputDto!
+  getLectureList(getLectureListInput: GetLectureListInputDto!): GetLectureListOutputDto!
+}
+
+input GetLectureInputDto {
+  lectureId: Float!
+}
+
+input GetLectureListInputDto {
+  title: String
+  skills: [String!]
+  currentPrice: Int
+  category: String
+  order: String!
+  page: Int!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInputDto!): CreateUserOutputDto!
+  login(loginInput: LoginInputDto!): LoginOutputDto!
+  createLecture(createLectureInput: CreateLectureInputDto!): CreateLectureOutputDto!
+  likeLecture(CreateLikeLectureInput: CreateLikeLectureInputDto!): CreateLikeLectureOutputDto!
+}
+
+input CreateUserInputDto {
+  email: String!
+  password: String!
+  checkPassword: String!
+  firstName: String!
+  lastName: String!
+}
+
+input LoginInputDto {
+  email: String!
+  password: String!
+}
+
+input CreateLectureInputDto {
+  title: String!
+  author: String!
+  skills: [String!]!
+  category: [String!]!
+  lectureUpdatedAt: String!
+  level: String!
+  originPrice: Float!
+  currentPrice: Float!
+  description: String!
+  provider: String!
+  thumbnailUrl: String!
+  duration: String!
+  score: Float!
+  url: String!
+}
+
+input CreateLikeLectureInputDto {
+  lectureId: Float!
+}

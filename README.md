@@ -67,6 +67,9 @@ API endpoint는 아래와 같습니다.
 http://${server_url}/graphql
 ```
 
+  <br/>
+  
+
 요청 Header는 아래와 같습니다.
 
 ```

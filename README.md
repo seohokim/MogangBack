@@ -1,8 +1,4 @@
-# Survey API Server
-
-본 프로젝트는 GraphQL을 이용한 설문조사 API 서버 구축입니다.
-
-Made By 김서호
+# Mogang API Server
 
 
   <br/>

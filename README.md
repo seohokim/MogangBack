@@ -437,3 +437,7 @@ response 예시:
 
   <br/>
 
+#UML Schema
+<img width="1335" alt="스크린샷 2023-12-03 오후 8 43 46" src="https://github.com/seohokim/MogangBack/assets/93414498/9968bd42-a752-49cf-a345-8911a671cb00">
+
+

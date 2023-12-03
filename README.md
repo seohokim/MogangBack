@@ -1,5 +1,6 @@
 # Mogang API Server
 
+NestJS와 GraphQL을 이용한 "모강"백엔드 서버입니다.
 
   <br/>
 

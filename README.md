@@ -8,9 +8,6 @@ Made By 김서호
   <br/>
 
 
-- [4. ER Diagram](#er-diagram)
-
-- [5. File Tree](#file-tree)
 
 # Project Environment
 
@@ -442,88 +439,4 @@ response 예시:
 ```
 
   <br/>
----
 
-## File Tree
-
-```
-📦HeartLab_test
- ┣ 📂src
- ┃ ┣ 📜main.ts
- ┃ ┣ 📜app.module.ts
- ┃ ┣ 📂answer
- ┃ ┃ ┣ 📜answer.module.ts
- ┃ ┃ ┣ 📜answer.resolver.ts
- ┃ ┃ ┗ 📜answer.service.ts
- ┃ ┃ ┣ 📂dtos
- ┃ ┃ ┃ ┣ 📜answer.dto.ts
- ┃ ┃ ┃ ┣ 📜create-answer.dto.ts
- ┃ ┃ ┃ ┣ 📜delete-answer.dto.ts
- ┃ ┃ ┃ ┣ 📜get-answer.dto.ts
- ┃ ┃ ┃ ┗ 📜update-answer.dto.ts
- ┃ ┃ ┗ 📂entities
- ┃ ┃ ┃ ┗ 📜answer.entity.ts
- ┃ ┣ 📂common
- ┃ ┃ ┣ 📂dto
- ┃ ┃ ┃ ┗ 📜core.dto.ts
- ┃ ┃ ┣ 📂entity
- ┃ ┃ ┃ ┗ 📜core.entity.ts
- ┃ ┃ ┣ 📂error
- ┃ ┃ ┃ ┗ 📜error.class.ts
- ┃ ┃ ┗ 📂utils
- ┃ ┃ ┃ ┗ 📜response.util.ts
- ┃ ┣ 📂config
- ┃ ┃ ┣ 📜typeorm.config.ts
- ┃ ┃ ┗ 📂config
- ┃ ┃ ┃ ┗ 📂logger.ts
- ┃ ┃ ┃ ┃ ┗ 📜logger.config.ts
- ┃ ┣ 📂option
- ┃ ┃ ┣ 📜option.module.ts
- ┃ ┃ ┣ 📜option.resolver.ts
- ┃ ┃ ┗ 📜option.service.ts
- ┃ ┃ ┣ 📂dtos
- ┃ ┃ ┃ ┣ 📜option.dto.ts
- ┃ ┃ ┃ ┣ 📜create-option.dto.ts
- ┃ ┃ ┃ ┣ 📜delete-option.dto.ts
- ┃ ┃ ┃ ┣ 📜get-option.dto.ts
- ┃ ┃ ┃ ┗ 📜update-option.dto.ts
- ┃ ┃ ┣ 📂entities
- ┃ ┃ ┃ ┗ 📜option.entity.ts
- ┃ ┃ ┗ 📂types
- ┃ ┃ ┃ ┗ 📜option.type.ts
- ┃ ┣ 📂question
- ┃ ┃ ┣ 📜question.module.ts
- ┃ ┃ ┣ 📜question.resolver.ts
- ┃ ┃ ┗ 📜question.service.ts
- ┃ ┃ ┣ 📂dtos
- ┃ ┃ ┃ ┣ 📜question.dto.ts
- ┃ ┃ ┃ ┣ 📜create-question.dto.ts
- ┃ ┃ ┃ ┣ 📜delete-question.dto.ts
- ┃ ┃ ┃ ┣ 📜get-question.dto.ts
- ┃ ┃ ┃ ┗ 📜update-question.dto.ts
- ┃ ┃ ┣ 📂entities
- ┃ ┃ ┃ ┗ 📜question.entity.ts
- ┃ ┃ ┗ 📂types
- ┃ ┃ ┃ ┗ 📜question.type.ts
- ┃ ┗ 📂survey
- ┃ ┃ ┣ 📜survey.module.ts
- ┃ ┃ ┣ 📜survey.resolver.ts
- ┃ ┃ ┗ 📜survey.service.ts
- ┃ ┃ ┣ 📂dtos
- ┃ ┃ ┃ ┣ 📜survey.dto.ts
- ┃ ┃ ┃ ┣ 📜create-survey.dto.ts
- ┃ ┃ ┃ ┣ 📜delete-survey.dto.ts
- ┃ ┃ ┃ ┣ 📜get-survey.dto.ts
- ┃ ┃ ┃ ┗ 📜update-survey.dto.ts
- ┃ ┃ ┣ 📂entities
- ┃ ┃ ┃ ┗  📜survey.entity.ts
- ┃ ┃ ┗ 📂types
- ┃ ┃ ┃ ┗  📜survey.type.ts
- ┣ 📜.eslintrc.js
- ┣ 📜.gitignore
- ┣ 📜.README.md
- ┣ 📜.nest-cli.json
- ┣ 📜.package.json
- ┣ 📜.tsconfig.build.json
- ┗ 📜.tsconfig.json
-```
